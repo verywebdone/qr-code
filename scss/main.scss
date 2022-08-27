@@ -1,0 +1,80 @@
+//=======================================
+// Do not change the order of those files
+//=======================================
+
+// VENDOR
+@forward "vendor/normalize";
+
+// ABSTRACT
+@forward "abstracts/helper";
+
+// COMPONENTS
+@forward "components/alert";
+@forward "components/banner";
+@forward "components/buttons";
+@forward "components/card";
+@forward "components/forms";
+@forward "components/icons";
+@forward "components/menu";
+@forward "components/modal";
+@forward "components/progress";
+@forward "components/table";
+
+// PAGES
+@forward "pages/home";
+
+// THEMES
+@forward "themes/dark";
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(213, 225, 239, 1);
+  height: 100vh;
+  font-family: outfit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    width: 250px;
+    background-color: #ffffff;
+    width: 320px;
+    height: 497px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.178);
+
+    &__image {
+      width: 100%;
+      border-radius: inherit;
+      height: 60%;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      height: 40%;
+      justify-content: space-evenly;
+      text-align: center;
+      padding: 5px 10px;
+
+      h1 {
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      p {
+        color: rgba(125, 136, 158, 1);
+        font-size: 15px;
+        font-weight: 400;
+      }
+    }
+  }
+}

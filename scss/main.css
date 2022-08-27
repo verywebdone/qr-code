@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+@forward "vendor/normalize";
+@forward "abstracts/helper";
+@forward "components/alert";
+@forward "components/banner";
+@forward "components/buttons";
+@forward "components/card";
+@forward "components/forms";
+@forward "components/icons";
+@forward "components/menu";
+@forward "components/modal";
+@forward "components/progress";
+@forward "components/table";
+@forward "pages/home";
+@forward "themes/dark";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #d5e1ef;
+  height: 100vh;
+  font-family: outfit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container {
+  width: 250px;
+  background-color: #ffffff;
+  width: 320px;
+  height: 497px;
+  padding: 15px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.178);
+          box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.178);
+}
+
+body .container__image {
+  width: 100%;
+  border-radius: inherit;
+  height: 60%;
+}
+
+body .container__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 40%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+body .container__info h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+body .container__info p {
+  color: #7d889e;
+  font-size: 15px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=main.css.map */
